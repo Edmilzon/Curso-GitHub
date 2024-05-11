@@ -67,3 +67,79 @@ Restaurar archivos del working directory:
 ```bash
 git restore <archivo>
 ```
+
+###Crear un commit
+
+En el momento de la creacion de un commit con los archivos en el stage, se puede utilizar el siguiente comando:
+
+```bash
+
+git commit -m "<mensaje>"
+
+```
+
+### Historial de commits
+
+Si se desea visualizar el historial de commits, se puede utilizar el siguiente comando:
+
+```bash
+
+git log
+
+```
+
+otros comandos:
+
+```bash
+
+git log --oneline
+git log --graph
+git log --oneline --graph
+
+```
+
+### Ramas
+
+Una rama es una línea de desarrollo independiente que permite trabajar en una nueva funcionalidad sin afectar la rama principal.
+
+Para crear una rama, se puede utilizar el siguiente comando:
+
+```bash
+git branch <nombre-rama>
+```
+
+Para eliminar una rama, se puede utilizar el siguiente comando:
+
+```bash
+git branch -D <nombre-rama>
+```
+
+Para eliminar ramas de mi repositorio remoto, se puede utilizar el siguiente comando:
+
+```bash
+git remote prune origin
+```
+
+Para ver las ramas, se puede utilizar el siguiente comando:
+
+```bash
+git branch
+```
+
+Para ver todas las ramas, se puede utilizar el siguiente comando:
+
+```bash
+git branch -a
+```
+
+Para cambiar de rama, se puede utilizar el siguiente comando:
+
+```bash
+git checkout <nombre-rama> || git switch <nombre-rama>
+```
+
+Para crear una rama y cambiar a ella, se puede utilizar el siguiente comando:
+
+```bash
+git checkout -b <nombre-rama> || git switch -c <nombre-rama>
+```
